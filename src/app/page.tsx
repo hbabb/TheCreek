@@ -1,101 +1,57 @@
 import Image from "next/image";
+import McbcLogo from "../../public/McbcTransparentLogoOnly.svg"
+import McbcLogoWhite from "../../public/McbcTransparentLogoOnly-white.svg"
+import { Header } from "@/components/layout/Header"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    
+    <div className="flex min-h-screen flex-col items-center justify-between dark:bg-slate-800">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <main className="flex flex-col  w-full flex-1 items-center justify-center lg:flex-row lg:justify-around">
+
+        {/* Logo Section */}
+        <div className="flex flex-col items-center w-full lg:w-1/3 mx-6 px-6 ">
+          <div className="relative w-11/12 -mb-12 text-creek-blue dark:text-creek-white">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={McbcLogo}
+              alt="Motlow Creek Baptist Church Logo"
+              width={800}
+              height={800}
+              className="object-contain dark:hidden"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <Image
+              src={McbcLogoWhite}
+              alt="Motlow Creek Baptist Church Logo"
+              width={800}
+              height={800}
+              className="hidden dark:block object-contain"
+              priority
+            />
+          </div>
+          <div className="flex flex-col items-center text-creek-gray dark:text-creek-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-allura">
+              Motlow Creek Baptist Church
+            </h1>
+            <h3 className="text-base md:text-lg lg:text-xl font-roboto-400 uppercase tracking-[0.2em] [word-spacing:0.3em]">
+              Where Faith Grows and Hearts Connect
+            </h3>
+          </div>
         </div>
+
+        {/* Message from the Pastor */}
+        <div className="flex flex-col items-center w-full lg:w-2/3 dark:text-creek-white">
+          <h1>
+            Message from the Pastor here
+          </h1>
+        </div>
+
+
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      {/* <Footer /> */}
     </div>
   );
 }

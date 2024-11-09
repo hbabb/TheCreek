@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Motlow Creek Baptist Church Website
+
+A modern website serving the Motlow Creek Baptist Church community and potential visitors.
+
+## Overview
+
+Our website provides a digital home for Motlow Creek Baptist Church, allowing visitors to learn about our values and principles while serving our members with useful tools and resources.
+
+## Core Features
+
+- Church information and values presentation
+- Ministry programs information (Sunday School, Youth, Children, Choir)
+- Blog system with multiple member editors
+- Event management with registration capabilities
+- Member portal with profile management
+- Prayer request system with notification distribution
+- Dynamic content areas for Pastor and Prayer Director messages
+
+## Tech Stack
+
+- **Framework**: Next.js with TypeScript
+- **Authentication**: Kinde Auth
+- **Databases**:
+  - MongoDB (Blogs/Events)
+  - Neon PostgreSQL (Membership/Relational data)
+- **ORM**: Drizzle
+- **Forms**: react-hook-form with zod validation
+- **Server Actions**: next-safe-action
+- **Data Management**: TanStack
+- **UI**: TailwindCSS + shadcn/ui
+- **Error Monitoring**: Sentry
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up environment variables:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   cp .env.example .env.local
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server:
 
-## Learn More
+   ```bash
+   pnpm dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [User Stories](./docs/UserStories.md)
+- [Technical Stack Details](./docs/TechStack.md)
+- [Project Notes](./docs/ProjectNotes.md)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please read our [Contributing Guidelines](./CONTRIBUTING.md) before submitting pull requests.
