@@ -103,9 +103,9 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		backgroundImage: {
-		'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-		'gradient-conic':
-			'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			'contact-img': "url('/images/contact-background.jpg')",
+			'blue-gradient': "url('/images/blue-gradiant.jpg')",
+			'sky-background': "url('/images/sky-background.jpg')",
 		},
 		keyframes: {
 			"appear": {
