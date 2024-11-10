@@ -36,7 +36,7 @@ export function Header() {
                     <div className="flex items-center gap-2">
                     
                     <NavButton
-                        icon={ChurchIcon}
+                        icon={Send}
                         label="Contact"
                         href="/contact"
                     />
