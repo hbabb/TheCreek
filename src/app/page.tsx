@@ -6,7 +6,7 @@ import { Header } from "@/components/layout/Header"
 export default function Home() {
   return (
     
-    <div className="animate-appear flex min-h-screen flex-col items-center justify-between dark:bg-slate-800 mx-auto w-full">
+    <div className="animate-appear flex min-h-screen flex-col items-center justify-between dark:bg-creek-blue mx-auto w-full">
       <Header />
 
       <main className="flex flex-col  w-full flex-1 items-center justify-center lg:flex-row lg:justify-around">
@@ -32,7 +32,7 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col items-center text-creek-gray dark:text-creek-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-allura">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider font-allura">
               Motlow Creek Baptist Church
             </h1>
             <h3 className="text-base md:text-lg lg:text-xl font-roboto-400 uppercase tracking-[0.2em] [word-spacing:0.3em]">
