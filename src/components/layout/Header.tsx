@@ -6,7 +6,7 @@ import { ModeToggle } from "@/components/layout/ModeToggle";
 
 export function Header() {
     return (
-        <header className="flex-none animate-slide h-12 p-2  bg-creek-white dark:bg-slate-800 sticky top-0 z-20 w-full">
+        <header className="flex-none animate-slide h-12 p-2  bg-creek-white dark:bg-creek-blue sticky top-0 z-20 w-full">
 
             <div className="flex h-8 items-center justify-between w-4/5 mx-auto text-creek-blue dark:text-creek-white border-b border-creek-blue dark:border-creek-white">
 
@@ -23,7 +23,7 @@ export function Header() {
                         className="flex justify-center items-center gap-2 ml-0"
                         title="Home"
                     >
-                        <h1 className="hidden sm:block text-2xl font-bold m-0 mt-1 font-allura">
+                        <h1 className="hidden sm:block text-2xl font-semibold tracking-wider m-0 mt-1 font-allura">
                             Motlow Creek Baptist Church
                         </h1>
                         

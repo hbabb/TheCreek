@@ -133,16 +133,16 @@ export default function Contact() {
     }
   
   return (
-<div className='min-h-screen flex flex-col bg-fixed w-full bg-sky-background bg-cover bg-center bg-no-repeat'>
-            <Header />
-            <main className='flex flex-col justify-center items-center w-full my-auto p-4'>
+    <div className='h-full flex-1 flex flex-col bg-fixed w-full bg-sky-background bg-cover bg-center bg-no-repeat'>
+        <Header />
+        <main className='flex flex-col justify-center items-center w-full my-auto p-4'>
                 <div className='relative w-full max-w-2xl mx-auto'>
                     {/* Frosted glass container */}
                     <div className='absolute inset-0 -z-10 bg-gray-400/20 backdrop-blur-xl rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300'/>
                     
                     <div className='backdrop-blur-sm bg-white/10 rounded-2xl border border-gray-200/20 shadow-xl overflow-hidden'>
                         <div className='p-8'>
-                            <h2 className='text-2xl font-josefinSans font-semibold text-creek-blue dark:text-creek-white mb-6 text-center'>
+                            <h2 className='text-2xl font-josefinSans font-semibold text-creek-white mb-6 text-center'>
                                 Send us a Message
                             </h2>
                             
@@ -154,14 +154,14 @@ export default function Contact() {
                                         name="fullName"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-creek-blue dark:text-creek-white">
+                                                <FormLabel className="text-creek-white">
                                                     Full Name
                                                 </FormLabel>
                                                 <FormControl>
                                                     <Input 
                                                         placeholder="John Doe" 
                                                         {...field}
-                                                        className="bg-white/30 dark:bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors" 
+                                                        className="bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors" 
                                                     />
                                                 </FormControl>
                                                 <FormMessage />
@@ -174,7 +174,7 @@ export default function Contact() {
                                         name="email"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-creek-blue dark:text-creek-white">
+                                                <FormLabel className="text-creek-white">
                                                     Email
                                                 </FormLabel>
                                                 <FormControl>
@@ -182,7 +182,7 @@ export default function Contact() {
                                                         type="email"
                                                         placeholder="you@example.com"
                                                         {...field}
-                                                        className="bg-white/30 dark:bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
+                                                        className="bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
                                                     />
                                                 </FormControl>
                                                 <FormMessage />
@@ -195,7 +195,7 @@ export default function Contact() {
                                         name="phone"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-creek-blue dark:text-creek-white">
+                                                <FormLabel className="text-creek-white">
                                                     Phone Number
                                                 </FormLabel>
                                                 <FormControl>
@@ -203,7 +203,7 @@ export default function Contact() {
                                                         type="tel"
                                                         placeholder="+1 (555) 000-0000"
                                                         {...field}
-                                                        className="bg-white/30 dark:bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
+                                                        className="bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
                                                     />
                                                 </FormControl>
                                                 <FormMessage />
@@ -216,14 +216,14 @@ export default function Contact() {
                                         name="message"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-creek-blue dark:text-creek-white">
+                                                <FormLabel className="text-creek-white">
                                                     Message
                                                 </FormLabel>
                                                 <FormControl>
                                                     <Textarea 
                                                         placeholder="Your message here..."
                                                         {...field}
-                                                        className="min-h-[120px] bg-white/30 dark:bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
+                                                        className="min-h-[120px] bg-gray-800/30 border-gray-200/30 focus:border-blue-400 transition-colors"
                                                     />
                                                 </FormControl>
                                                 <FormMessage />
@@ -238,7 +238,7 @@ export default function Contact() {
                                     <Button 
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="w-full bg-creek-blue hover:bg-creek-blue/90 text-white transition-colors"
+                                        className="w-full bg-creek-blue hover:bg-lightHouse-blue/90 text-white transition-colors"
                                     >
                                         {isSubmitting ? "Sending..." : "Send Message"}
                                     </Button>
