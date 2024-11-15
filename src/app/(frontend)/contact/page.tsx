@@ -1,5 +1,8 @@
 'use client'
 
+// TODO: Refactor this for a separation of concerns - Use matrix-portfolio project as a guide
+
+import { Metadata } from 'next'
 import React from 'react'
 // import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
@@ -21,6 +24,10 @@ import { useState } from "react"
 import { useToast } from "@/hooks/use-toast"
 import { ToastAction } from '@/components/ui/toast'
 import { Toaster } from '@/components/ui/toaster'
+
+export const metadata: Metadata = {
+    title: 'Contact',
+  }
 
 // Validation schema with security measures
 const formSchema = z.object({
