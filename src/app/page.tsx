@@ -3,7 +3,7 @@ import Image from "next/image";
 import McbcLogo from "../../public/McbcTransparentLogoOnly.svg"
 import McbcLogoWhite from "../../public/McbcTransparentLogoOnly-white.svg"
 import { Header } from "@/components/layout/Header"
-import { PastorMessage } from "@/components/layout/PastorMessage";
+import { PastorMessage } from "@/components/home/PastorMessage";
 
 export const metadata: Metadata = {
   title: 'Home',

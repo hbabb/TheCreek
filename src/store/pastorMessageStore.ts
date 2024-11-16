@@ -1,6 +1,6 @@
 // src/store/pastorMessageStore.ts
 import { create } from 'zustand';
-import { getLatestPastorMessage, getAllPublishedMessages } from "@/actions/pastorMessage";
+import { getLatestPastorMessage, getAllPublishedMessages } from "@/lib/actions/pastorMessage";
 
 interface PastorMessage {
   id: string
@@ -45,6 +45,7 @@ export const usePastorMessageStore = create<PastorMessageStore>((set) => ({
         set({ error: "Validation failed" }) // capture validation errors
       }
     } catch (error) {
+      console.log(error)
       set({ error: 'Failed to fetch latest message' })
     } finally {
       set({ isLoading: false })
@@ -62,6 +63,7 @@ export const usePastorMessageStore = create<PastorMessageStore>((set) => ({
         set({ error: "Validation failed" }) // capture validation errors
       }
     } catch (error) {
+      console.log(error)
       set({ error: 'Failed to fetch messages' })
     } finally {
       set({ isLoading: false })
