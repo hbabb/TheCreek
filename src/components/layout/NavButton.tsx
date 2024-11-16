@@ -17,7 +17,6 @@ export function NavButton({
     return (
         <Button
             variant={"ghost"}
-            size={"icon"}
             aria-label={label}
             title={label}
             className="rounded-full"

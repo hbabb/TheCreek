@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePastorMessageStore } from "@/store/pastorMessageStore";
 import { Skeleton } from "@/components/ui/skeleton"
-import { index } from "drizzle-orm/mysql-core";
+// import { index } from "drizzle-orm/mysql-core";
 import { ScrollArea } from "@/components/ui/scroll-area";
 // import { Loader2 } from "lucide-react";
 
